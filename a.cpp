@@ -173,7 +173,7 @@ void MyMath::PhuongTrinhBac2()
     
     delta = 1ll*b * b - 4ll * a*c;
     if (a==0)
-        std::cout << "X=" << -b/a;
+        std::cout << "X=" << -c/b;
     else if (delta > 0)
     {
         double x1,x2;
