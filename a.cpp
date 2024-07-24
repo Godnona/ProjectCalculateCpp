@@ -164,15 +164,17 @@ void MyMath::PhuongTrinhBac1()
 
 void MyMath::PhuongTrinhBac2()
 {
-    int a,b,c;
-    long long delta;
+    float a,b,c;
+    double delta;
     std::cout<<"ax^(2)+bx+c=0"<<std::endl;
     std::cout<<"Nhap a: "; std::cin>>a;
     std::cout<<"Nhap b: "; std::cin>>b;
     std::cout<<"Nhap c: "; std::cin >>c;
     
     delta = 1ll*b * b - 4ll * a*c;
-    if (delta > 0)
+    if (a==0)
+        std::cout << "X=" << -b/a;
+    else if (delta > 0)
     {
         double x1,x2;
         x1=((double)-b-sqrt(delta)) / (2*a);
@@ -183,9 +185,7 @@ void MyMath::PhuongTrinhBac2()
         std::cout << "X = " << (double)-b / (2 * a);
     else if(delta < 0)
         std::cout<< "Khong tinh dc " << std::endl ;
-    else if (a==0){
-        std::cout << "X=" << -b/a;
-    }
+    
 }   
 
 
