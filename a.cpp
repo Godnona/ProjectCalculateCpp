@@ -155,10 +155,10 @@ void MyMath::PhuongTrinhBac1()
     std::cout<<"Nhap b: "; std::cin>>b;
     if(a!=0)
     {
-        cout << "X=" << -b/a;
+        std::cout << "X=" << -b/a;
     }
     else if (a==0)
-        cout<<"ko tinh dc";
+        std::cout<<"ko tinh dc";
 
 }
 
@@ -166,6 +166,7 @@ void MyMath::PhuongTrinhBac2()
 {
     int a,b,c;
     long long delta;
+    std::cout<<"ax^(2)+bx+c=0"<<std::endl;
     std::cout<<"Nhap a: "; std::cin>>a;
     std::cout<<"Nhap b: "; std::cin>>b;
     std::cout<<"Nhap c: "; std::cin >>c;
@@ -180,9 +181,12 @@ void MyMath::PhuongTrinhBac2()
     }    
     else if(delta == 0)
         std::cout << "X = " << (double)-b / (2 * a);
-    else
+    else if(delta < 0)
         std::cout<< "Khong tinh dc " << std::endl ;
-}
+    else if (a==0){
+        std::cout << "X=" << -b/a;
+    }
+}   
 
 
 
@@ -250,4 +254,3 @@ int main()
     system("pause");
     return 0;
 }
-
