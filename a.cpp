@@ -180,7 +180,7 @@ void MyMath::PhuongTrinhBac2()
         x1=((double)-b-sqrt(delta)) / (2*a);
         x2=((double)-b+sqrt(delta)) / (2*a);
         std::cout << "X1 = " << setprecision(5) << fixed << x1 << " X2 = "<< setprecision(5) << fixed << x2 << std::endl;
-    }    
+    }
     else if(delta == 0)
         std::cout << "X = " << (double)-b / (2 * a);
     else if(delta < 0)
